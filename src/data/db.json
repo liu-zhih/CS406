@@ -1,0 +1,38 @@
+{
+  "diningHalls": [
+    {
+      "id": 1,
+      "name": "Arnold",
+      "rating": 4,
+      "address": "681 SW 26th Street Corvallis, OR 97331"
+    },
+    {
+      "id": 2,
+      "name": "ILLC",
+      "rating": 3,
+      "address": "1701 SW Western Blvd, Corvallis, OR 97331"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "text": "Taste guud!",
+      "diningHallsId": 1
+    },
+    {
+      "id": 2,
+      "text": "Average",
+      "diningHallsId": 1
+    },
+    {
+      "id": 3,
+      "text": "convenient. Pretty close to my dorm",
+      "diningHallsId": 2
+    },
+    {
+      "text": "hey",
+      "diningHallsId": "1",
+      "id": 4
+    }
+  ]
+}
