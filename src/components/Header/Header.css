@@ -3,6 +3,12 @@
     background-color: #D73F09;
     display: flex;
     padding: 0;
-    height: 10rem;
+    height: 6rem;
     width: 100%;
+}
+
+.header img{
+    width: 6rem;
+    height: 4rem;
+    padding-left: 5px;
 }

@@ -31,4 +31,11 @@ a{
     color: #D73F09;
     font-size: 40px;
     font-weight: bold;
+    border-radius: 5%;
+    padding: 3px;
+}
+
+a:hover{
+    color: black;
+    background-color: #D73F09;
 }

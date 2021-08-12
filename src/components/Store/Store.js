@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Comment from "../Comment";
+import './Store.css';
 
 const Store = (props) => {
   const [diningHall, setDiningHall] = useState({
@@ -52,7 +53,7 @@ const Store = (props) => {
 
     reviews.forEach((review) => (tempSum += review.rating));
 
-    setReviewAverage(tempSum / length);
+    setReviewAverage(Math.round(tempSum / length));
   }, [reviews]);
 
   return (
@@ -60,22 +61,33 @@ const Store = (props) => {
       className="store"
       style={{ visibility: loaded ? "visible" : "hidden" }}
     >
-      <p>This is {diningHall.name}</p>
-      <p>{diningHall.address}</p>
-      <p>Average Reviews: {reviewAverage}</p>
-      <h2>Comments:</h2>
-      <Comment
-        comments={comments}
-        setComments={setComments}
-        reviews={reviews}
-        setReviews={setReviews}
-        diningHallsId={diningHall.id}
-      />
-      {comments.map((comment) => (
-        <div key={comment.id}>
-          <p>{comment.text}</p>
+      <div className="infoContainer">
+        <h1>{diningHall.name}</h1>
+        <h1>{diningHall.address}</h1>
+        <img src={diningHall.img} alt="" className="dImg"/>
+        <h1>Average Rating: {reviewAverage}</h1>
+      
+        <Comment
+          comments={comments}
+          setComments={setComments}
+          reviews={reviews}
+          setReviews={setReviews}
+          diningHallsId={diningHall.id}
+        />
+        <div className="commentContainer">
+        {comments.map((comment) => (
+          <div key={comment.id}>
+            <h3 className="commentItem">{comment.text}</h3>
+          </div>
+        ))}
         </div>
-      ))}
+        
+      </div>
+
+      <div>
+        <img src={diningHall.map} alt="" className="map"/>
+      </div>
+      
     </div>
   );
 };

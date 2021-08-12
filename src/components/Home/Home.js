@@ -10,13 +10,13 @@ function Home(props){
     return (
         <div className = "home">
             <h1>Greating, Beavers!</h1>
-            <h1>Welcome to OSU Dinning Halls Review!</h1>
+            <h1>Welcome to OSU Dining Halls Review!</h1>
             <div className = "instr"> 
                 <h2>User Instructions:</h2>
-                <h2 className = "instr_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2>
+                <h2 className = "instr_text">To review dinning halls, please click the links at the bottom. In the dining halls' page, you can leave your comments and rating. You must enter both of them to post a comment. The rating range is between 1 to 5.</h2>
 
                 <h2>About the project:</h2>
-                <h2 className = "instr_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2>
+                <h2 className = "instr_text">This project aims to provide a platform for the OSU students and staff to review all kinds of thing on campus. At current stage, it only has the functionality to review two of the on campus dining halls/stores. Note that this map is still not functional yet, and this project is still in development.</h2>
             </div>
 
             <div className = "dinLinks">

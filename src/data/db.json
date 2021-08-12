@@ -4,13 +4,17 @@
       "id": 1,
       "name": "Arnold",
       "rating": 4,
-      "address": "681 SW 26th Street Corvallis, OR 97331"
+      "address": "681 SW 26th Street Corvallis, OR 97331",
+      "img": "/arnold.jpg",
+      "map": "/arnold_map.png"
     },
     {
       "id": 2,
-      "name": "ILLC",
+      "name": "International Living-Learning Center",
       "rating": 3,
-      "address": "1701 SW Western Blvd, Corvallis, OR 97331"
+      "address": "1701 SW Western Blvd, Corvallis, OR 97331",
+      "img": "/ILLC.jpg",
+      "map": "/ILLC_map.png"
     }
   ],
   "comments": [
@@ -33,6 +37,16 @@
       "text": "hey",
       "diningHallsId": 1,
       "id": 4
+    },
+    {
+      "text": "asdas",
+      "diningHallsId": 1,
+      "id": 5
+    },
+    {
+      "text": "12412",
+      "diningHallsId": 1,
+      "id": 6
     }
   ],
   "reviews": [
@@ -40,6 +54,31 @@
       "id": 1,
       "rating": 2,
       "diningHallsId": 1
+    },
+    {
+      "rating": 0,
+      "diningHallsId": 1,
+      "id": 2
+    },
+    {
+      "rating": 5,
+      "diningHallsId": 1,
+      "id": 3
+    },
+    {
+      "rating": 5,
+      "diningHallsId": 2,
+      "id": 4
+    },
+    {
+      "rating": 5,
+      "diningHallsId": 1,
+      "id": 5
+    },
+    {
+      "rating": 5,
+      "diningHallsId": 1,
+      "id": 6
     }
   ]
 }

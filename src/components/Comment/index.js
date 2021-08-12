@@ -9,10 +9,17 @@ const Comment = ({
   setReviews,
 }) => {
   const [comment, setComment] = useState("");
-  const [rating, setRating] = useState(0);
+  const [rating, setRating] = useState(1);
 
   const submitComment = () => {
-    let newComment = {
+    if(comment === ''){
+      alert("You did not enter comment.")
+    }
+    if(rating < 1 || rating > 5){
+      alert("Enter a rating between 1 and 5.")
+    }
+    else{
+      let newComment = {
       text: comment,
       diningHallsId: parseInt(diningHallsId),
     };
@@ -34,6 +41,9 @@ const Comment = ({
 
     setComment("");
     setRating(0);
+    }
+
+    
   };
 
   return (
@@ -41,11 +51,12 @@ const Comment = ({
       <input
         value={comment}
         onChange={(e) => setComment(e.target.value)}
-        placeholder="comment"
+        placeholder="leave your comment"
       />
       <input
         value={rating}
         onChange={(e) => setRating(e.target.value)}
+        placeholder="rating"
         type="number"
         max="5"
         min="1"
