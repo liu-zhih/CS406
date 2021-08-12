@@ -31,8 +31,15 @@
     },
     {
       "text": "hey",
-      "diningHallsId": "1",
+      "diningHallsId": 1,
       "id": 4
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "rating": 2,
+      "diningHallsId": 1
     }
   ]
 }

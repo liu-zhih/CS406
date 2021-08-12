@@ -1,31 +1,25 @@
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from 'react-router-dom';
-import Header from './components/Header/Header';
-import Home from './components/Home/Home';
-// import Store from './components/Store/Store';
-import Test from './components/Store/Test';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
+import Store from "./components/Store/Store";
+import "./App.css";
 
 function App() {
-
   return (
     <div className="App">
       {/* router to control page switching */}
       <Router>
         {/* Header component */}
-        <Header/>
+        <Header />
         {/* tmp home page display controller */}
         {/* {display ? <Home/> : null} */}
 
         <Switch>
           <Route exact path="/">
-            <Home/>
+            <Home />
           </Route>
 
-          <Route path="/dininghalls/:id" component={Test} />
+          <Route path="/dininghalls/:id" component={Store} />
 
           {/* switch to Arnold 
           {/* <Route path="/Arnold">
@@ -42,10 +36,8 @@ function App() {
           <Route path="*">
             <h1>404</h1>
           </Route>
-
         </Switch>
       </Router>
-
     </div>
   );
 }

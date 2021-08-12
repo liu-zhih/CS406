@@ -1,0 +1,110 @@
+{
+  "diningHalls": [
+    {
+      "id": 1,
+      "name": "Arnold",
+      "rating": 4,
+      "address": "681 SW 26th Street Corvallis, OR 97331"
+    },
+    {
+      "id": 2,
+      "name": "ILLC",
+      "rating": 3,
+      "address": "1701 SW Western Blvd, Corvallis, OR 97331"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "text": "Taste guud!",
+      "diningHallsId": 1
+    },
+    {
+      "id": 2,
+      "text": "Average",
+      "diningHallsId": 1
+    },
+    {
+      "id": 3,
+      "text": "convenient. Pretty close to my dorm",
+      "diningHallsId": 2
+    },
+    {
+      "text": "hey",
+      "diningHallsId": 1,
+      "id": 4
+    },
+    {
+      "text": "test",
+      "diningHallsId": 1,
+      "id": 5
+    },
+    {
+      "text": "bew",
+      "diningHallsId": 1,
+      "id": 6
+    },
+    {
+      "text": "yes",
+      "diningHallsId": 1,
+      "id": 7
+    },
+    {
+      "text": "eee",
+      "diningHallsId": 1,
+      "id": 8
+    },
+    {
+      "text": "new",
+      "diningHallsId": 1,
+      "id": 9
+    },
+    {
+      "text": "efefe",
+      "diningHallsId": 1,
+      "id": 10
+    },
+    {
+      "text": "tesss",
+      "diningHallsId": 2,
+      "id": 11
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "rating": 2,
+      "diningHallsId": 1
+    },
+    {
+      "rating": 2,
+      "diningHallsId": 1,
+      "id": 2
+    },
+    {
+      "rating": 2,
+      "diningHallsId": 1,
+      "id": 3
+    },
+    {
+      "rating": 1,
+      "diningHallsId": 1,
+      "id": 4
+    },
+    {
+      "rating": 2,
+      "diningHallsId": 1,
+      "id": 5
+    },
+    {
+      "rating": 2,
+      "diningHallsId": 1,
+      "id": 6
+    },
+    {
+      "rating": 2,
+      "diningHallsId": 2,
+      "id": 7
+    }
+  ]
+}
